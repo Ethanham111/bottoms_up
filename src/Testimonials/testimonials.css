@@ -1,0 +1,47 @@
+.TestimonalsContainer{
+    text-align: center;
+    padding-top: 130px; /* Adjust the value to add more space */
+    padding-bottom: 150px; /* Adjust the value to add more space */
+}
+
+.counterImg{
+    width: 50%;
+}
+
+#testHeader{
+    position: relative;
+    color:#DBDADA;
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Monckeberg Light';
+}
+
+
+.Testimonials {
+    max-width: 400px; /* Adjust the maximum width of the testimonial section */
+    margin: auto; /* Center the testimonial section */
+}
+
+.swiper-container{
+    overflow: hidden;
+    width: auto; /* Set your desired fixed width */
+    height: 175px; /* Set your desired fixed height */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 24pt;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    color: #DBDADA;
+    font-family: 'Monckeberg Light';
+    border: 2px ;
+
+    
+}
+
+.testimonial-author {
+    font-style: italic;
+    color: #E5383B;
+    margin-top: 10px;
+    font-family: 'Monckeberg Light';
+}

@@ -1,0 +1,50 @@
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: #0B090A;
+    display: flex;
+}
+
+.navBar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust the space between logo and links */
+    padding: 15px;
+    background-color: #0B090A;
+}
+
+.navElement {
+    color: white;
+    font-size: 18pt;
+    font-family: 'Monckeberg';
+    text-decoration: none;
+    position: relative;
+    margin: 0 45px; /* Adjust the margin to add space between elements */
+    display: inline-block; /* Use display:inline-block to respect margin */
+}
+
+.red-bar {
+    position: absolute;
+    bottom: 0;
+    height: 4px; /* Adjust the height of the red bar */
+    background-color: red;
+    width: 0;
+    transition: width 0.3s ease;
+    left: 0;
+}
+
+.navElement:hover .red-bar,
+.navElement.active .red-bar {
+    width: 100%;
+    left: 0;
+}
+
+#mainNavImg {
+    height: 125px; /* Adjust the height of the logo */
+    padding-top: 25px;
+}
+
+#martiniImage{
+    vertical-align: middle;
+}

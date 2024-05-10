@@ -1,5 +1,5 @@
 
-
+import "./footer.css"
 function Footer(){
 
     return(
@@ -9,7 +9,7 @@ function Footer(){
                 <p>&copy; {new Date().getFullYear()} Bottoms' up bar service. all rights reserved.</p>
             </div>
             <div id="websiteDev">
-                <p> Created by Ethan Hamburg </p>
+                <p>Created by Ethan Hamburg </p>
             </div>  
         </footer>
     );

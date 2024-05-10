@@ -18,108 +18,11 @@
     font-style: normal;
   }
 
-.navBar {
-    position: sticky;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Adjust the space between logo and links */
-    padding: 15px;
-    background-color: #0B090A;
-}
-
-.navElement {
-    color: white;
-    font-size: 18pt;
-    font-family: 'Monckeberg';
-    text-decoration: none;
-    position: relative;
-    margin: 0 45px; /* Adjust the margin to add space between elements */
-    display: inline-block; /* Use display:inline-block to respect margin */
-}
-
-.red-bar {
-    position: absolute;
-    bottom: 0;
-    height: 4px; /* Adjust the height of the red bar */
-    background-color: red;
-    width: 0;
-    transition: width 0.3s ease;
-    left: 0;
-}
-
-.navElement:hover .red-bar,
-.navElement.active .red-bar {
-    width: 100%;
-    left: 0;
-}
-
-#mainNavImg {
-    height: 125px; /* Adjust the height of the logo */
-    padding-top: 25px;
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23313131' fill-opacity='0.84' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 
-.homeSection{
-    display: flex;
-    
-}
-
-#homeSlogan {
-    display: flex;
-    height: 120px;
-    padding-top: 5px;
-    justify-content: center;
-    color: white;
-    font-family: 'Monckeberg';
-    font-size: 6vw;
-    font-weight: 1000;
-    white-space: nowrap;
-    opacity: 1; 
-    animation: fadeInSlogan 4s ease forwards;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
-}
-
-@keyframes fadeInSlogan {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-
-#homeimg1{
-    height: auto;
-    max-width: 50%;
-    float: left;
-}
-
-#homeimg2{
-    height: auto;
-    max-width: 50%;
-    float: right;
-}
-
-#martiniImage{
-    vertical-align: middle;
-}
-
-#glassesContainer {
-    display: flex;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center;
-    padding-top: 35px;
-    height: 35vh; /* Adjust height as needed */
-    width: 100%;
-}
-
-.martiniRow{
-    width: 100%; /* Make images responsive */
-    max-width: 250px; /* Maximum size */
-    display: block; /* Align images correctly */
-    margin: 0 auto; /* Center images */
-}

@@ -1,12 +1,13 @@
-import logo from "./Images/BOTTOMS UP OG.png"
-import martini from "./Images/BOTTOMS UP Martini1.png"
+import logo from '../Images/logoNoBackground.png'
+import martini from '../Images/logoMartini.png'
+import './header.css'
 
 function Header() {
 
     return (
         <header>
             <nav className="navBar">
-                <img id="mainNavImg" src={logo} alt="Main Logo" />
+                <img id="mainNavImg" src={logo} alt="Main Logo"/>
                 <div className="navLinks">
                     <a className="navElement" id="homeNav" href="#homeSection">Home<span className="red-bar"></span></a>
                     <a className="navElement" id="servicesNav" href="#servicesSection">Services<span className="red-bar"></span></a>

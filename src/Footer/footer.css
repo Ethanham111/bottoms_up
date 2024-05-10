@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #0B090A;
+    color: white;
+    font-family: 'Monckeberg';
+  }
+
+  #websiteDev{
+    text-align: end;
+    padding-right: 10px;
+  }

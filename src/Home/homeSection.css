@@ -1,0 +1,44 @@
+
+.homeSection{
+    display: flex;
+    
+}
+
+#homeSlogan {
+    display: flex;
+    height: 120px;
+    padding-top: 5px;
+    justify-content: center;
+    color: white;
+    font-family: 'Monckeberg';
+    font-size: 6vw;
+    font-weight: 1000;
+    white-space: nowrap;
+    opacity: 1; 
+    animation: fadeInSlogan 4s ease forwards;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+}
+
+@keyframes fadeInSlogan {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#homeimg1{
+    height: auto;
+    max-width: 50%;
+    float: left;
+}
+
+#homeimg2{
+    height: auto;
+    max-width: 50%;
+    float: right;
+}

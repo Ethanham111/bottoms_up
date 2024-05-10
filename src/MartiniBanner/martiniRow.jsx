@@ -1,5 +1,6 @@
-import React from 'react';
-import martinis from "./Images/cartoonMartinis.png";
+
+import martinis from "../Images/cartoonMartinis.png";
+import './martiniRow.css'
 
 function MartiniRow() {
     return (

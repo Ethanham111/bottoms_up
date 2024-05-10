@@ -1,0 +1,15 @@
+#glassesContainer {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+    padding-top: 35px;
+    height: 35vh; /* Adjust height as needed */
+    width: 100%;
+}
+
+.martiniRow{
+    width: 100%; /* Make images responsive */
+    max-width: 250px; /* Maximum size */
+    display: block; /* Align images correctly */
+    margin: 0 auto; /* Center images */
+}

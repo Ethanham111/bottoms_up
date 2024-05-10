@@ -1,5 +1,6 @@
-import banner1 from "./Images/bannerLeft.jpg"
-import banner2 from "./Images/bannerRight.jpg"
+import banner1 from "../Images/bannerLeft.jpg"
+import banner2 from "../Images/bannerRight.jpg"
+import './homeSection.css'
 
 function HomeSection() {
 

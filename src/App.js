@@ -1,7 +1,11 @@
-import Header from "./header";
-import Footer from "./Footer";
-import HomeSection from "./homeSection";
-import MartiniRow from "./martiniRow";
+import Header from "./Header/header";
+import Footer from './Footer/footer';
+import HomeSection from "./Home/homeSection";
+import MartiniRow from "./MartiniBanner/martiniRow";
+import ServicesContainer from "./Services/services";
+import Testimonals from "./Testimonials/testimonials";
+
+
 
 function App() {
 
@@ -10,6 +14,8 @@ function App() {
     <Header/>
     <HomeSection/>
     <MartiniRow/>
+    <ServicesContainer/>
+    <Testimonals/>
     <Footer/>
     </>
   );
