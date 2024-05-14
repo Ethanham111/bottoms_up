@@ -1,5 +1,5 @@
 
-import martinis from "../Images/cartoonMartinis.png";
+import martinis from "../Images/glass.png";
 import './martiniRow.css'
 
 function MartiniRow() {

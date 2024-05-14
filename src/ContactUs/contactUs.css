@@ -1,0 +1,65 @@
+#contactHeader {
+    color: #DBDADA;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Monckeberg Light';
+    position: relative;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+}
+
+.contactsSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+    margin-bottom: 100px;
+    font-family: 'Monckeberg Light';
+}
+
+.emailDiv,
+.callDiv,
+.socialDiv {
+    background-color: #E5383B;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin: 0 20px; /* Add space between the divs */
+}
+
+/* Transitions for smoother hover effects */
+.callDiv,
+.socialDiv,
+.emailDiv {
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+/* Hover effects */
+.callDiv:hover,
+.socialDiv:hover {
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.emailDiv:hover {
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+}
+
+#instaPhoto {
+    width: 165px; /* Adjust the size as needed */
+    height: auto;
+}
+
+
+/*
+Mobile Responsiveness
+*/
+

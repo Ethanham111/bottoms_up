@@ -1,17 +1,25 @@
-.header{
-    height: 80px;
+.header {
+    height: 100px;
     width: 100%;
     background-color: #0B090A;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .navBar {
-    position: sticky;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjust the space between logo and links */
-    padding: 15px;
-    background-color: #0B090A;
+    justify-content: center;
+    width: 90%;
+    gap: 100px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 30px;
 }
 
 .navElement {
@@ -20,14 +28,14 @@
     font-family: 'Monckeberg';
     text-decoration: none;
     position: relative;
-    margin: 0 45px; /* Adjust the margin to add space between elements */
-    display: inline-block; /* Use display:inline-block to respect margin */
+    margin: 0;
+    display: inline-block;
 }
 
 .red-bar {
     position: absolute;
-    bottom: 0;
-    height: 4px; /* Adjust the height of the red bar */
+    bottom: -3px;
+    height: 4px;
     background-color: red;
     width: 0;
     transition: width 0.3s ease;
@@ -37,14 +45,29 @@
 .navElement:hover .red-bar,
 .navElement.active .red-bar {
     width: 100%;
-    left: 0;
 }
 
 #mainNavImg {
-    height: 125px; /* Adjust the height of the logo */
-    padding-top: 25px;
+    height: 70px;
 }
 
-#martiniImage{
+#martiniImage {
+    height: 40px;
     vertical-align: middle;
+    cursor: pointer;
+}
+
+.language-button {
+    background-color: #E5383B;
+    color: white;
+    font-size: 16pt;
+    font-family: 'Monckeberg';
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.language-button:hover {
+    background-color: rgb(212, 14, 14);
 }

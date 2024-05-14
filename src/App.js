@@ -4,7 +4,8 @@ import HomeSection from "./Home/homeSection";
 import MartiniRow from "./MartiniBanner/martiniRow";
 import ServicesContainer from "./Services/services";
 import Testimonals from "./Testimonials/testimonials";
-
+import AboutUs from "./AboutUs/aboutUs";
+import ContactUs from "./ContactUs/contactUs";
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
     <MartiniRow/>
     <ServicesContainer/>
     <Testimonals/>
+    <AboutUs/>
+    <ContactUs/>
     <Footer/>
     </>
   );

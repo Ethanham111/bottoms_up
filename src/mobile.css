@@ -1,0 +1,219 @@
+
+@media only screen and (max-width: 800px) {
+
+    .martiniRow{
+        max-width: 20%;
+    }
+
+    #glassesContainer{
+        height: 15vh;
+    }
+
+    #mainNavImg{
+        max-height: 100px;
+    }
+
+    #martiniImage{
+        max-height: 40px;
+    }
+
+    .glasses-img{
+        max-width: 40%;
+    }
+
+    .logo{
+        max-width: 40%;
+    }
+
+
+    #homeSlogan {
+        font-size: 8vw;
+    }
+
+
+    #serviceHeader {
+        font-size: 5vh; /* Remove any existing margin */
+        z-index: 0;
+    }
+
+    #aboutSection,
+    #contactHeader,
+    #testHeader {
+        font-size: 5vh; /* Adjust font size for other headers as needed */
+    }
+
+    /* Adjust font size for paragraphs */
+    #servicesItalics,
+    #aboutDescription,
+    .servicesText p,
+    .contactsSection p,
+    .Testimonals p {
+        font-size: 2.2vh;
+    }
+
+    #servicesParagraph {
+        font-size: 2.2vh;
+        max-width: 500px;
+    }
+
+    #Copyright{
+        font-size: 1.5vh;
+    }
+
+    #websiteDev{
+        font-size: 1.5vh;
+    }
+    
+    .swiper-slide {
+        font-size: 10pt;
+    }
+
+    .swiper-container {
+        height: 120px; /* Adjust the height as needed */
+    }
+
+    .foundersPic{
+        max-width: 50%;
+        padding-right: 20px;
+    }
+
+
+    #serviceHeader::after,
+    #contactHeader::after,
+    #testHeader::after,
+    .aboutUsHeader::after {
+        width: 100px; /* Adjust the width for smaller screens */
+        height: 2px; /* Adjust the height for smaller screens */
+    }
+
+    .serviceImg{
+        max-height: 350px;
+    }
+
+    #shaking{
+        display: none;
+    }
+
+    .servicesDivs {
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .overlay-box {
+        display: none;
+    }
+    
+    .serviceDescription {
+        display: none;
+    }
+
+    .serviceDescriptionMobile {
+        display: block; 
+        color: white;
+        font-size: 2.6vh; 
+        font-family: 'Monckeberg';
+        overflow: hidden;
+        z-index: 2; /* Ensures the description is above the image */
+        text-align: center; /* Centers the text inside the block */
+    }
+
+    #aboutDescription {
+        max-width: 500px; 
+        padding-top: 25px;
+    }
+
+    .aboutSection{
+        flex-direction: column;
+    }
+
+    .servicesDivs:hover .serviceImg {
+        opacity: 1;
+    }
+
+    .servicesDivs:hover .overlay-box {
+        opacity: 1;
+    }
+
+    .testimonial-author{
+        display: none;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-open .navLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 80px; /* Adjust this value based on your header height */
+        right: 0;
+        width: 100%;
+        background-color: #0B090A; /* Adjust the background color */
+        padding-top: 20px; /* Add padding as needed */
+    }
+
+    .serviceDescription,.TestimonalsContainer, .aboutSection{
+        padding-bottom: 3%;
+    }
+    
+
+    .servicesText {
+        padding-top: 20px; /* Adjust or remove the padding for smaller screens */
+    }
+
+    .contactsSection {
+        flex-direction: row;
+    }
+
+    /* Adjust styles for individual contact boxes on mobile */
+    .callDiv,
+    .emailDiv,
+    .socialDiv {
+        width: 50%; /* Make the width 100% for mobile screens */
+        height: 50%; /* Ensure the height matches the width for a circular shape */
+        margin: 30px 0; /* Adjust margin for better spacing on mobile */
+        border-radius: 50%; /* Make the boxes circular */
+        overflow: hidden; /* Ensure content stays within the circular shape */
+        transition: width 0.3s ease, height 0.3s ease;
+    }
+
+    .callDiv:hover,
+    .socialDiv:hover {
+        width: 60%; /* Expand the width a little on hover */
+        height: 60%; /* Expand the height a little on hover */
+}
+
+.emailDiv:hover {
+    width: 60%; /* Expand the width a little on hover */
+    height: 60%; /* Expand the height a little on hover */
+}
+
+    .callUs,
+    .emailUs{
+        font-size: 4vw;
+    }
+
+    /* Adjust styles for logo images inside circular contact boxes */
+    .callDiv img,
+    .emailDiv img {
+        width: 50%; /* Make the logo image fill the circular container */
+        height: 50%; /* Maintain aspect ratio */
+    }
+    
+    
+    .socialDiv img {
+        max-width: 40%;
+    }
+
+    /* Adjust styles for text under the circular contact boxes */
+    .phoneNumber, .email {
+        display: none; /* Hide the phone number and email text */
+    }
+}
