@@ -8,6 +8,7 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    
 }
 
 .contactsSection {
@@ -30,6 +31,7 @@
     border-color: black;
     border-width: 5px;
     margin: 0 20px; /* Add space between the divs */
+    
 }
 
 /* Transitions for smoother hover effects */
