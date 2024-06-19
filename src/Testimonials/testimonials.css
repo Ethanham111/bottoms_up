@@ -16,6 +16,17 @@
     font-family: 'Monckeberg Light';
 }
 
+#testHeader::after {
+    content: "";
+    display: block;
+    width: 200px; 
+    height: 3px; 
+    background-color: #E5383B;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .Testimonials {
     max-width: 400px; /* Adjust the maximum width of the testimonial section */

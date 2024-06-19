@@ -61,3 +61,20 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow for a floating effect */
     animation: float 3s ease-in-out infinite; /* Apply the floating animation */
 }
+
+@media only screen and (max-width: 800px) {
+    .aboutSection {
+        flex-direction: column; /* Stack elements vertically for smaller screens */
+        text-align: center; /* Center text for mobile layout */
+    }
+
+    .foundersPic {
+        max-width: 80%;
+        padding-right: 0;
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    #aboutDescription {
+        max-width: 100%;
+    }
+}

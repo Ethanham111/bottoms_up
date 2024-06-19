@@ -11,6 +11,17 @@
     
 }
 
+#contactHeader::after {
+    content: "";
+    display: block;
+    width: 200px; 
+    height: 3px; 
+    background-color: #E5383B;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .contactsSection {
     display: flex;
     justify-content: center;
@@ -25,7 +36,7 @@
 .emailDiv,
 .callDiv,
 .socialDiv {
-    background-color: #E5383B;
+    background-color: #db090d;
     padding: 20px;
     border-style: solid;
     border-color: black;
@@ -58,6 +69,12 @@
 #instaPhoto {
     width: 165px; /* Adjust the size as needed */
     height: auto;
+    padding-left: 15px;
+}
+
+.phoneNumber,
+.email {
+    color: white;
 }
 
 
@@ -65,3 +82,47 @@
 Mobile Responsiveness
 */
 
+@media only screen and (max-width: 800px) {
+    .contactsSection {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .emailDiv,
+    .callDiv,
+    .socialDiv {
+        width: 100px; /* Make the width 100px for mobile screens */
+        height: 100px; /* Ensure the height matches the width for a circular shape */
+        border-radius: 50%; /* Make the boxes circular */
+        overflow: hidden; /* Ensure content stays within the circular shape */
+        margin: 20px 0; /* Adjust margin for better spacing on mobile */
+        padding: 0; /* Remove padding for better centering */
+    }
+
+    .callDiv img,
+    .emailDiv img,
+    .socialDiv img {
+        width: 60%; /* Make the logo image fill the circular container */
+        height: auto;
+        margin-top: 25%;
+    }
+
+    #instaPhoto{
+        max-width: 50%;
+        padding-left: 5px;
+    }
+
+    .callUs,
+    .emailUs,
+    .phoneNumber,
+    .email {
+        display: none; /* Hide the text on mobile */
+    }
+
+    .callDiv:hover,
+    .socialDiv:hover,
+    .emailDiv:hover {
+        width: 100px; /* Remove hover effect */
+        height: 100px; /* Remove hover effect */
+    }
+}

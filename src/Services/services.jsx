@@ -1,24 +1,26 @@
-
+// src/Services/services.jsx
 import React from 'react';
 import shaking from '../Images/shaking.jpg';
 import outdoors from '../Images/20230904_184048.jpg';
 import indoors from '../Images/20230618_190624.jpg';
 import './services.css';
 import { useLanguage } from '../Language';
+import useIntersectionObserver from '../observer';
 
 function ServicesContainer() {
     const { language } = useLanguage();
+    const elementsRef = useIntersectionObserver({ threshold: 0.2 });
 
     return (
         <>
-            <h2 className="hidden" id="serviceHeader">
+            <h2 ref={(el) => elementsRef.current.push(el)} className="hidden" id="serviceHeader">
                 {language === 'EN' ? 'Our Services' : 'Nos Services'}
             </h2>
             <div className="servicesText" id="servicesSection">
-                <p className="hidden" id="servicesItalics">
+                <p ref={(el) => elementsRef.current.push(el)} className="hidden" id="servicesItalics">
                     {language === 'EN' ? 'Professional Event Staffing and Mobile Bar Services' : 'Services de personnel d\'événement professionnel et de bar mobile'}
                 </p>
-                <p className="hidden" id="servicesParagraph">
+                <p ref={(el) => elementsRef.current.push(el)} className="hidden" id="servicesParagraph">
                     {language === 'EN'
                         ? '"Bottoms Up" offers the perfect solution for a wide range of events. Whether you\'re hosting a relaxed backyard barbecue or an elegant wedding reception, we provide a versatile and stylish bar setup that caters to your specific event needs. We ensure your event is not just an occasion but a lasting memory.'
                         : '"Bottoms Up" offre la solution parfaite pour une large gamme d\'événements. Que vous organisiez un barbecue décontracté dans votre jardin ou une réception de mariage élégante, nous proposons une installation de bar polyvalente et élégante qui répond à vos besoins spécifiques. Nous veillons à ce que votre événement ne soit pas seulement une occasion, mais un souvenir durable.'}
@@ -28,7 +30,7 @@ function ServicesContainer() {
             <div className="servicesContainer">
                 <div className="servicesDivs" id="formalDiv">
                     <div className="overlay-box">
-                        <div className="serviceDescription">
+                        <div ref={(el) => elementsRef.current.push(el)} className="serviceDescription">
                             {language === 'EN' ? 'Formal Events' : 'Événements Formels'}
                         </div>
                     </div>
@@ -42,7 +44,7 @@ function ServicesContainer() {
 
                 <div className="servicesDivs" id="casualDiv">
                     <div className="overlay-box">
-                        <div className="serviceDescription">
+                        <div ref={(el) => elementsRef.current.push(el)} className="serviceDescription">
                             {language === 'EN' ? 'Casual Events' : 'Événements Décontractés'}
                         </div>
                     </div>

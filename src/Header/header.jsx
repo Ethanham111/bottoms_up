@@ -8,9 +8,6 @@ function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const { language, toggleLanguage } = useLanguage();
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
 
     return (
         <header className="header">
@@ -35,7 +32,7 @@ function Header() {
                     </a>
                 </div>
                 <button className="language-button" onClick={toggleLanguage}>
-                    {language === 'EN' ? 'Français' : 'English'}
+                    {language === 'EN' ? 'FR' : 'EN'}
                 </button>
             </nav>
         </header>

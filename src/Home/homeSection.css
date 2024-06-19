@@ -1,10 +1,17 @@
+/* src/homeSection.css */
 
-.homeSection{
+.homeSection {
     display: flex;
-    
+    position: relative; /* Ensure the container is relative */
+    justify-content: center;
+    align-items: center;
 }
 
 #homeSlogan {
+    position: absolute; /* Position the slogan absolutely within the container */
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     height: 120px;
     padding-top: 5px;
@@ -14,7 +21,7 @@
     font-size: 6vw;
     font-weight: 1000;
     white-space: nowrap;
-    opacity: 1; 
+    opacity: 0; /* Start with opacity 0 for animation */
     animation: fadeInSlogan 4s ease forwards;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */
@@ -31,14 +38,7 @@
     }
 }
 
-#homeimg1{
+#homeimg1, #homeimg2 {
     height: auto;
     max-width: 50%;
-    float: left;
-}
-
-#homeimg2{
-    height: auto;
-    max-width: 50%;
-    float: right;
 }
