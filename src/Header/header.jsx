@@ -8,11 +8,17 @@ function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const { language, toggleLanguage } = useLanguage();
 
+    const handleMenuToggle = () => {
+        setMenuOpen(!menuOpen);
+    };
 
     return (
         <header className="header">
             <nav className="navBar">
                 <img id="mainNavImg" src={logo} alt="Main Logo" />
+                <button className="dropdown-button" onClick={handleMenuToggle}>
+                    &#9776;
+                </button>
                 <div className={`navLinks ${menuOpen ? 'mobile-menu-open' : ''}`}>
                     <a className="navElement" id="homeNav" href="#homeSection">
                         {language === 'EN' ? 'Home' : 'Accueil'}
@@ -40,5 +46,3 @@ function Header() {
 }
 
 export default Header;
-
-

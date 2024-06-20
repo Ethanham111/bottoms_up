@@ -31,6 +31,10 @@
     font-size: 18pt;
     margin-bottom: 100px;
     font-family: 'Monckeberg Light';
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
 }
 
 .emailDiv,
@@ -97,6 +101,7 @@ Mobile Responsiveness
         overflow: hidden; /* Ensure content stays within the circular shape */
         margin: 20px 0; /* Adjust margin for better spacing on mobile */
         padding: 0; /* Remove padding for better centering */
+        
     }
 
     .callDiv img,

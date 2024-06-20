@@ -39,7 +39,7 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: left;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
 
 .foundersPic {
@@ -60,21 +60,56 @@
     border-radius: 20px; /* Rounded corners */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow for a floating effect */
     animation: float 3s ease-in-out infinite; /* Apply the floating animation */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1200px) {
+    .aboutUsHeader {
+        font-size: 3em;
+    }
+
+    #aboutDescription {
+        font-size: 1.5em;
+    }
 }
 
 @media only screen and (max-width: 800px) {
+    .aboutUsHeader {
+        font-size: 2.5em;
+    }
+
     .aboutSection {
         flex-direction: column; /* Stack elements vertically for smaller screens */
         text-align: center; /* Center text for mobile layout */
+        padding-bottom: 50px;
     }
 
     .foundersPic {
-        max-width: 80%;
+        max-width: 60%;
         padding-right: 0;
         margin-bottom: 20px; /* Add some space below the image */
     }
 
     #aboutDescription {
         max-width: 100%;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutUsHeader {
+        font-size: 2em;
+    }
+
+    #aboutDescription {
+        font-size: 1em;
+    }
+
+    .foundersPic {
+        max-width: 80%;
     }
 }

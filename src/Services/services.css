@@ -1,11 +1,10 @@
-.servicesText{
+.servicesText {
     display: flex;
     flex-direction: column;
     text-align: center;
-
 }
 
-#serviceHeader{
+#serviceHeader {
     color: #DBDADA;
     text-align: center;
     align-content: center;
@@ -29,32 +28,39 @@
     transform: translateX(-50%);
 }
 
-
-#servicesItalics{
+#servicesItalics {
     color: white;
     font-size: 3em;
     font-family: 'Monckeberg Light';
     font-style: italic;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
 }
 
-#servicesParagraph{
+#servicesParagraph {
     color: white;
     font-size: 1.8em;
     font-family: 'Monckeberg Light';
     max-width: 70%;
     margin: 0 auto;
     padding-bottom: 50px;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
 }
 
-.servicesContainer{
+.servicesContainer {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     justify-content: space-evenly; 
     align-items: center;
     flex-wrap: wrap;
 }
 
-.serviceImg{
+.serviceImg {
     max-width: 100%;
     height: 550px;
     opacity: 1;
@@ -64,9 +70,10 @@
     border-radius: 10px;
     border-width: 10;
     margin-top: 20px;
+    position: relative;
 }
 
-#shaking{
+#shaking {
     height: 550px;
     max-width: 50%;
     border-style: solid;
@@ -76,32 +83,29 @@
     margin-top: 20px;
 }
 
-.servicesDivs{
+.servicesDivs {
     position: relative;
     overflow: hidden;
 }
 
-.servicesDivs .overlay-box{    
+.servicesDivs .overlay-box {    
     position: absolute;
-    bottom: 20%;
     left: 0;
     right: 0;
     text-align: center;
-    padding: 20;
-    opacity:0;
+    margin-top: 70%;
+    opacity: 0;
     transition: opacity 0.5s ease;
     z-index: 1;
-    border-radius: 40px;
     overflow: hidden;
-  }
-  
+}
 
-  .servicesDivs:hover .serviceImg {
+.servicesDivs:hover .serviceImg {
     opacity: 0.5;
- }
+}
 
-    .servicesDivs:hover .overlay-box {
-        opacity: 1;
+.servicesDivs:hover .overlay-box {
+    opacity: 1;
 }
 
 /* Hide on larger screens */
@@ -109,16 +113,16 @@
     display: none;
 }
 
- .serviceDescription{
-    color:white;
+.serviceDescription {
+    color: white;
     font-size: 32pt;
     font-family: 'Monckeberg';
     padding-left: 10px;
     padding-bottom: 150px;
     text-align: center;
- }
+}
 
- .hidden {
+.hidden {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
@@ -127,4 +131,93 @@
 .animate {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1200px) {
+    #serviceHeader {
+        font-size: 3em;
+    }
+
+    #servicesItalics {
+        font-size: 2.5em;
+    }
+
+    #shaking {
+        display: none; /* Hide the shaking image on mobile */
+    }
+
+    #servicesParagraph {
+        font-size: 1.5em;
+    }
+
+    .serviceDescription {
+        font-size: 28pt;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #serviceHeader {
+        font-size: 2.5em;
+    }
+
+    #servicesItalics {
+        font-size: 2em;
+    }
+    
+
+    #servicesParagraph {
+        font-size: 1.2em;
+    }
+
+    .serviceDescription {
+        font-size: 24pt;
+    }
+
+    .serviceImg{
+        max-height: 350px;
+    }
+
+    .servicesDivs:hover .serviceImg {
+        opacity: 1; /* Disable hover effect on photos */
+    }
+
+    .servicesDivs:hover .overlay-box {
+        opacity: 0; /* Disable hover effect on overlay box */
+    }
+
+    .serviceDescription {
+        display: none;
+    }
+
+    .serviceDescriptionMobile {
+        display: block; 
+        color: white;
+        font-size: 2.6vh; 
+        font-family: 'Monckeberg';
+        overflow: hidden;
+        z-index: 2; /* Ensures the description is above the image */
+        text-align: center; /* Centers the text inside the block */
+    }
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #serviceHeader {
+        font-size: 2em;
+    }
+
+    #servicesItalics {
+        font-size: 1.8em;
+    }
+
+    #servicesParagraph {
+        font-size: 1em;
+    }
+
+    .serviceDescription {
+        font-size: 20pt;
+    }
+
 }

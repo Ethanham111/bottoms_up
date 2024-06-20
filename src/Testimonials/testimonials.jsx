@@ -42,8 +42,7 @@ function Testimonals() {
                         <p class="testimonial-author">-Naomi</p>
                     </div>
                     <div class="swiper-slide">
-                        <p class="comments">"BEST BAR SERVICE EVER!!! Your team went above and beyond to ensure that my engagement party
-                            was a blast!"</p>
+                        <p class="comments">"BEST BAR SERVICE EVER!!!"</p>
                         <p class="testimonial-author"> -Sabrina</p>
                     </div>
 
@@ -53,8 +52,7 @@ function Testimonals() {
                     </div>
 
                     <div class="swiper-slide">
-                        <p class="comments">"Used bottoms up bar service for my birthday party. They made amazing cocktails and were
-                            super professional."</p>
+                        <p class="comments">"Used bottoms up bar service for my birthday party. They made amazing cocktails..."</p>
                         <p class="testimonial-author"> -Alicia</p>
                     </div>
                 </div>

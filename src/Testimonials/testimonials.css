@@ -1,16 +1,16 @@
-.TestimonalsContainer{
+.TestimonalsContainer {
     text-align: center;
     padding-top: 130px; /* Adjust the value to add more space */
     padding-bottom: 150px; /* Adjust the value to add more space */
 }
 
-.counterImg{
+.counterImg {
     width: 50%;
 }
 
-#testHeader{
+#testHeader {
     position: relative;
-    color:#DBDADA;
+    color: #DBDADA;
     font-size: 4em;
     text-align: center;
     font-family: 'Monckeberg Light';
@@ -27,13 +27,12 @@
     transform: translateX(-50%);
 }
 
-
 .Testimonials {
     max-width: 400px; /* Adjust the maximum width of the testimonial section */
     margin: auto; /* Center the testimonial section */
 }
 
-.swiper-container{
+.swiper-container {
     overflow: hidden;
     width: auto; /* Set your desired fixed width */
     height: 175px; /* Set your desired fixed height */
@@ -45,14 +44,84 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     color: #DBDADA;
     font-family: 'Monckeberg Light';
-    border: 2px ;
-
-    
+    border: 2px solid transparent;
 }
 
 .testimonial-author {
     font-style: italic;
     color: #E5383B;
-    margin-top: 10px;
+    margin-top: 5px; /* Reduced margin to bring closer to testimonial text */
     font-family: 'Monckeberg Light';
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 1200px) {
+    #testHeader {
+        font-size: 3em;
+    }
+
+    .swiper-slide {
+        font-size: 20pt;
+    }
+
+    .TestimonalsContainer {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #testHeader {
+        font-size: 2.5em;
+    }
+
+    .swiper-slide {
+        font-size: 18pt;
+    }
+
+    .testimonial-author {
+        font-size: 16pt;
+        margin-top: 5px;
+    }
+
+    .TestimonalsContainer {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    .Testimonials {
+        max-width: 90%;
+    }
+
+    .swiper-container {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #testHeader {
+        font-size: 2em;
+    }
+
+    .swiper-slide {
+        font-size: 16pt;
+    }
+
+    .testimonial-author {
+        font-size: 14pt;
+        margin-top: 5px;
+    }
+
+    .TestimonalsContainer {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .Testimonials {
+        max-width: 100%;
+    }
+
+    .swiper-container {
+        height: 125px;
+    }
 }

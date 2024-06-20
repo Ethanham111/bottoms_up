@@ -13,10 +13,11 @@ function ServicesContainer() {
 
     return (
         <>
+            <a id="servicesSection"> </a>
             <h2 ref={(el) => elementsRef.current.push(el)} className="hidden" id="serviceHeader">
                 {language === 'EN' ? 'Our Services' : 'Nos Services'}
             </h2>
-            <div className="servicesText" id="servicesSection">
+            <div className="servicesText">
                 <p ref={(el) => elementsRef.current.push(el)} className="hidden" id="servicesItalics">
                     {language === 'EN' ? 'Professional Event Staffing and Mobile Bar Services' : 'Services de personnel d\'événement professionnel et de bar mobile'}
                 </p>
@@ -31,11 +32,11 @@ function ServicesContainer() {
                 <div className="servicesDivs" id="formalDiv">
                     <div className="overlay-box">
                         <div ref={(el) => elementsRef.current.push(el)} className="serviceDescription">
-                            {language === 'EN' ? 'Formal Events' : 'Événements Formels'}
+                            {language === 'EN' ? 'Formal Events' : 'Formal Events'}
                         </div>
                     </div>
                     <div className="serviceDescriptionMobile">
-                        <span>{language === 'EN' ? 'Formal Events' : 'Événements Formels'}</span>
+                        <span>{language === 'EN' ? 'Formal Events' : 'Formal Events'}</span>
                     </div>
                     <img className="serviceImg" src={indoors} alt="Indoor venue with made cocktails on display" />
                 </div>
@@ -45,11 +46,11 @@ function ServicesContainer() {
                 <div className="servicesDivs" id="casualDiv">
                     <div className="overlay-box">
                         <div ref={(el) => elementsRef.current.push(el)} className="serviceDescription">
-                            {language === 'EN' ? 'Casual Events' : 'Événements Décontractés'}
+                            {language === 'EN' ? 'Casual Events' : 'Casual Events'}
                         </div>
                     </div>
                     <div className="serviceDescriptionMobile">
-                        <span>{language === 'EN' ? 'Casual Events' : 'Événements Décontractés'}</span>
+                        <span>{language === 'EN' ? 'Casual Events' : 'Casual Events'}</span>
                     </div>
                     <img className="serviceImg" src={outdoors} alt="Outdoor venue with mojito pitcher on display" />
                 </div>

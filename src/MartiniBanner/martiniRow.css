@@ -9,16 +9,45 @@
     white-space: nowrap;
 }
 
-.glasses{
+.glasses {
     width: 100%; /* Make images responsive */
     max-width: 120px; /* Maximum size */
     display: block; /* Align images correctly */
     margin: 0 auto; /* Center images */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.martinis{
+.martinis {
     width: 100%; /* Make images responsive */
     max-width: 170px; /* Maximum size */
     display: block; /* Align images correctly */
     margin: 0 auto; /* Center images */
+}
+
+/* Media Queries for Mobile */
+@media only screen and (max-width: 800px) {
+    #glassesContainer img:nth-child(n+3) {
+        display: none; /* Hide images after the 4th one on mobile */
+    }
+
+    .glasses {
+        width: 80%; /* Make images responsive */
+        max-width: 100px; /* Maximum size */
+        display: block; /* Align images correctly */
+        margin: 0 auto; /* Center images */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .martinis {
+        width: 80%; /* Make images responsive */
+        max-width: 150px; /* Maximum size */
+        display: block; /* Align images correctly */
+        margin: 0 auto; /* Center images */
+    }
 }
