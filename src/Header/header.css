@@ -1,4 +1,3 @@
-/* src/Header/header.css */
 .header {
     height: 100px;
     width: 100%;
@@ -9,8 +8,8 @@
     padding: 0 50px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
     box-sizing: border-box;
-    position: relative; /* Ensure the header is the positioning context for absolute elements */
-    z-index: 1000; /* Ensure the header is above other elements */
+    position: relative;
+    z-index: 1000;
 }
 
 .navBar {
@@ -26,6 +25,7 @@
     gap: 40px;
     flex-wrap: wrap;
     box-sizing: border-box;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .navElement {
@@ -36,10 +36,7 @@
     position: relative;
     margin: 0;
     display: inline-block;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    user-select: none;
 }
 
 .red-bar {
@@ -89,6 +86,10 @@
     margin-right: 4%;
 }
 
+.close-button{
+    display: none;
+}
+
 /* Mobile Responsive Styles */
 @media only screen and (max-width: 1000px) {
     .header {
@@ -108,22 +109,31 @@
 
     .navLinks {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 0;
         overflow: hidden;
-        position: fixed; /* Make it fixed to cover the whole page */
+        position: fixed;
         top: 0;
         left: 0;
-        transition: height 0.5s ease;
-        z-index: 999; /* Ensure it is above other elements except the header */
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        transform: translateY(-100%);
         padding-top: 100px;
+        z-index: 999;
+    }
+
+    .navLinks.mobile-menu-open {
+        height: 100%;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     .dropdown-button {
         display: block;
-        order: 1; /* Ensure dropdown button is first */
-        margin-right: auto; /* Align to the left */
+        order: 1;
+        margin-right: auto;
     }
 
     #mainNavImg {
@@ -137,5 +147,17 @@
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .close-button {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
     }
 }

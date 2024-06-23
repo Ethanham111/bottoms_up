@@ -1,0 +1,54 @@
+#glassesContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 35px;
+    height: 25vh; 
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.glasses {
+    width: 100%; 
+    max-width: 120px; 
+    display: block; 
+    margin: 0 auto; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.martinis {
+    width: 100%;
+    max-width: 170px; 
+    display: block;
+    margin: 0 auto; 
+}
+
+
+/*Mobile */
+@media only screen and (max-width: 800px) {
+    #glassesContainer img:nth-child(n+4) {
+        display: none; 
+    }
+
+    .glasses {
+        width: 80%; 
+        max-width: 100px; 
+        display: block; 
+        margin: 0 auto; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .martinis {
+        width: 80%; 
+        max-width: 150px; 
+        display: block; 
+        margin: 0 auto; 
+    }
+}

@@ -1,18 +1,19 @@
-// src/Services/services.jsx
+
 import React from 'react';
 import shaking from '../Images/shaking.jpg';
-import outdoors from '../Images/20230904_184048.jpg';
-import indoors from '../Images/20230618_190624.jpg';
+import casual from '../Images/casual.jpg';
+import formal from '../Images/formal.jpg';
 import './services.css';
 import { useLanguage } from '../Language';
 import useIntersectionObserver from '../observer';
 
 function ServicesContainer() {
     const { language } = useLanguage();
-    const elementsRef = useIntersectionObserver({ threshold: 0.2 });
+    const elementsRef = useIntersectionObserver({ threshold: 0.5 });
 
     return (
         <>
+        <div className = 'servicesWrapper'>
             <a id="servicesSection"> </a>
             <h2 ref={(el) => elementsRef.current.push(el)} className="hidden" id="serviceHeader">
                 {language === 'EN' ? 'Our Services' : 'Nos Services'}
@@ -38,7 +39,7 @@ function ServicesContainer() {
                     <div className="serviceDescriptionMobile">
                         <span>{language === 'EN' ? 'Formal Events' : 'Formal Events'}</span>
                     </div>
-                    <img className="serviceImg" src={indoors} alt="Indoor venue with made cocktails on display" />
+                    <img className="serviceImg" src={formal} alt="Indoor venue with made cocktails on display" />
                 </div>
 
                 <img id="shaking" src={shaking} alt="Shaking image" />
@@ -52,9 +53,10 @@ function ServicesContainer() {
                     <div className="serviceDescriptionMobile">
                         <span>{language === 'EN' ? 'Casual Events' : 'Casual Events'}</span>
                     </div>
-                    <img className="serviceImg" src={outdoors} alt="Outdoor venue with mojito pitcher on display" />
+                    <img className="serviceImg" src={casual} alt="Outdoor venue with mojito pitcher on display" />
                 </div>
             </div>
+        </div>
         </>
     );
 }

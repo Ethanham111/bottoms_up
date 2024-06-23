@@ -12,14 +12,14 @@
 
 .aboutUsHeader {
     color: #DBDADA;
-    font-size: 4em; /* Adjust the font size as needed */
+    font-size: 4em;
     text-align: center;
     font-family: 'Monckeberg Light';
     position: relative;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .aboutUsHeader::after {
@@ -43,30 +43,31 @@
 }
 
 .foundersPic {
-    max-width: 30%; /* Ensure the image doesn't exceed its container */
-    height: auto; /* Maintain the aspect ratio of the image */
+    max-width: 30%;
+    height: auto;
     border: solid #DBDADA;
-    border-radius: 10px; /* Add border-radius for rounded corners */
+    border-radius: 10px;
 }
 
 #aboutDescription {
-    font-size: 1.8em; /* Adjust the font size as needed */
+    font-size: 1.8em;
     color: white;
-    max-width: 800px; /* Set a maximum width for better readability */
+    max-width: 800px;
     font-family: 'Monckeberg Light';
     text-align: center;
-    background-color: rgba(196, 48, 48, 0.1); /* Light background to simulate a bubble */
     padding: 20px;
-    border-radius: 20px; /* Rounded corners */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow for a floating effect */
-    animation: float 3s ease-in-out infinite; /* Apply the floating animation */
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    animation: float 3s ease-in-out infinite;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-/* Media Queries for Responsiveness */
+
+
 @media only screen and (max-width: 1200px) {
     .aboutUsHeader {
         font-size: 3em;
@@ -83,15 +84,15 @@
     }
 
     .aboutSection {
-        flex-direction: column; /* Stack elements vertically for smaller screens */
-        text-align: center; /* Center text for mobile layout */
+        flex-direction: column;
+        text-align: center;
         padding-bottom: 50px;
     }
 
     .foundersPic {
         max-width: 60%;
         padding-right: 0;
-        margin-bottom: 20px; /* Add some space below the image */
+        margin-bottom: 20px;
     }
 
     #aboutDescription {
@@ -107,6 +108,7 @@
 
     #aboutDescription {
         font-size: 1em;
+        max-width: 400px;
     }
 
     .foundersPic {

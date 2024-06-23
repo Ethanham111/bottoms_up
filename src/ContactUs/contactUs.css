@@ -4,10 +4,10 @@
     font-size: 4em;
     font-family: 'Monckeberg Light';
     position: relative;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     
 }
 
@@ -31,32 +31,32 @@
     font-size: 18pt;
     margin-bottom: 100px;
     font-family: 'Monckeberg Light';
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .emailDiv,
 .callDiv,
 .socialDiv {
-    background-color: #db090d;
+    background-color: #f00105b9;
     padding: 20px;
     border-style: solid;
     border-color: black;
     border-width: 5px;
-    margin: 0 20px; /* Add space between the divs */
+    margin: 0 20px;
     
 }
 
-/* Transitions for smoother hover effects */
+
 .callDiv,
 .socialDiv,
 .emailDiv {
     transition: width 0.3s ease, height 0.3s ease;
 }
 
-/* Hover effects */
+
 .callDiv:hover,
 .socialDiv:hover {
     width: 250px;
@@ -71,7 +71,7 @@
 }
 
 #instaPhoto {
-    width: 165px; /* Adjust the size as needed */
+    width: 165px;
     height: auto;
     padding-left: 15px;
 }
@@ -80,11 +80,6 @@
 .email {
     color: white;
 }
-
-
-/*
-Mobile Responsiveness
-*/
 
 @media only screen and (max-width: 800px) {
     .contactsSection {
@@ -95,19 +90,19 @@ Mobile Responsiveness
     .emailDiv,
     .callDiv,
     .socialDiv {
-        width: 100px; /* Make the width 100px for mobile screens */
-        height: 100px; /* Ensure the height matches the width for a circular shape */
-        border-radius: 50%; /* Make the boxes circular */
-        overflow: hidden; /* Ensure content stays within the circular shape */
-        margin: 20px 0; /* Adjust margin for better spacing on mobile */
-        padding: 0; /* Remove padding for better centering */
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 20px 0;
+        padding: 0;
         
     }
 
     .callDiv img,
     .emailDiv img,
     .socialDiv img {
-        width: 60%; /* Make the logo image fill the circular container */
+        width: 60%;
         height: auto;
         margin-top: 25%;
     }
@@ -121,13 +116,13 @@ Mobile Responsiveness
     .emailUs,
     .phoneNumber,
     .email {
-        display: none; /* Hide the text on mobile */
+        display: none;
     }
 
     .callDiv:hover,
     .socialDiv:hover,
     .emailDiv:hover {
-        width: 100px; /* Remove hover effect */
-        height: 100px; /* Remove hover effect */
+        width: 100px;
+        height: 100px;
     }
 }

@@ -1,15 +1,15 @@
-/* src/homeSection.css */
+
 
 .homeSection {
     display: flex;
-    position: relative; /* Ensure the container is relative */
+    position: relative;
     justify-content: center;
     align-items: center;
 }
 
 #homeSlogan {
-    position: absolute; /* Position the slogan absolutely within the container */
-    top: 20px; /* Adjust as needed */
+    position: absolute;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -18,15 +18,15 @@
     justify-content: center;
     color: white;
     font-family: 'Monckeberg';
-    font-size: 6vw; /* Use viewport width for responsive font size */
+    font-size: 6vw;
     font-weight: 1000;
     white-space: nowrap;
-    opacity: 0; /* Start with opacity 0 for animation */
+    opacity: 0;
     animation: fadeInSlogan 4s ease forwards;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @keyframes fadeInSlogan {
@@ -43,34 +43,34 @@
     max-width: 50%;
 }
 
-/* Media Queries for Responsiveness */
+
 
 
 @media only screen and (max-width: 800px) {
 
     #homeSlogan {
         font-size: 8vw;
-        top: 15px; /* Adjust top position */
+        top: 15px;
     }
 
     #homeimg1 {
         max-width: 100%;
-        margin-bottom: 10px; /* Add margin between images */
+        margin-bottom: 10px;
     }
 
     #homeimg2 {
-        display: none; /* Hide the second image on smaller screens */
+        display: none;
     }
 }
 
 @media only screen and (max-width: 600px) {
     #homeSlogan {
-        font-size: 8vw; /* Increase font size for better readability */
-        top: 10px; /* Adjust top position */
+        font-size: 8vw;
+        top: 10px;
     }
 
     #homeimg1 {
-        max-width: 100%; /* Make the first image full width */
-        margin-bottom: 10px; /* Add margin between images */
+        max-width: 100%;
+        margin-bottom: 10px;
     }
 }

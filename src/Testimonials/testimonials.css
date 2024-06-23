@@ -1,7 +1,7 @@
 .TestimonalsContainer {
     text-align: center;
-    padding-top: 130px; /* Adjust the value to add more space */
-    padding-bottom: 150px; /* Adjust the value to add more space */
+    padding-top: 130px; 
+    padding-bottom: 150px; 
 }
 
 .counterImg {
@@ -28,14 +28,14 @@
 }
 
 .Testimonials {
-    max-width: 400px; /* Adjust the maximum width of the testimonial section */
-    margin: auto; /* Center the testimonial section */
+    max-width: 400px; 
+    margin: auto; 
 }
 
 .swiper-container {
     overflow: hidden;
-    width: auto; /* Set your desired fixed width */
-    height: 175px; /* Set your desired fixed height */
+    width: auto; 
+    height: 175px; 
 }
 
 .swiper-slide {
@@ -50,11 +50,12 @@
 .testimonial-author {
     font-style: italic;
     color: #E5383B;
-    margin-top: 5px; /* Reduced margin to bring closer to testimonial text */
+    margin-top: 5px; 
     font-family: 'Monckeberg Light';
 }
 
-/* Media Queries for Responsiveness */
+
+/* Mobile */
 @media only screen and (max-width: 1200px) {
     #testHeader {
         font-size: 3em;

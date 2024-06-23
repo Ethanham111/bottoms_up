@@ -1,7 +1,7 @@
 import Header from "./Header/header";
 import Footer from './Footer/footer';
 import HomeSection from "./Home/homeSection";
-import MartiniRow from "./MartiniBanner/martiniRow";
+import Cocktail_Banner from "./Cocktail_Banner/cocktails";
 import ServicesContainer from "./Services/services";
 import Testimonals from "./Testimonials/testimonials";
 import AboutUs from "./AboutUs/aboutUs";
@@ -14,7 +14,7 @@ function App() {
     <LanguageProvider>
       <Header/>
       <HomeSection/>
-      <MartiniRow/>
+      <Cocktail_Banner/>
       <ServicesContainer/>
       <Testimonals/>
       <AboutUs/>

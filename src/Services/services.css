@@ -11,10 +11,10 @@
     font-size: 4em;
     font-family: 'Monckeberg Light';
     padding-top: 20px;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #serviceHeader::after {
@@ -33,10 +33,10 @@
     font-size: 3em;
     font-family: 'Monckeberg Light';
     font-style: italic;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #servicesParagraph {
@@ -46,10 +46,10 @@
     max-width: 70%;
     margin: 0 auto;
     padding-bottom: 50px;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Safari */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .servicesContainer {
@@ -108,7 +108,7 @@
     opacity: 1;
 }
 
-/* Hide on larger screens */
+
 .serviceDescriptionMobile {
     display: none;
 }
@@ -133,7 +133,7 @@
     transform: translateY(0);
 }
 
-/* Media Queries for Responsiveness */
+
 @media only screen and (max-width: 1200px) {
     #serviceHeader {
         font-size: 3em;
@@ -144,7 +144,7 @@
     }
 
     #shaking {
-        display: none; /* Hide the shaking image on mobile */
+        display: none;
     }
 
     #servicesParagraph {
@@ -179,11 +179,11 @@
     }
 
     .servicesDivs:hover .serviceImg {
-        opacity: 1; /* Disable hover effect on photos */
+        opacity: 1;
     }
 
     .servicesDivs:hover .overlay-box {
-        opacity: 0; /* Disable hover effect on overlay box */
+        opacity: 0;
     }
 
     .serviceDescription {
@@ -196,8 +196,8 @@
         font-size: 2.6vh; 
         font-family: 'Monckeberg';
         overflow: hidden;
-        z-index: 2; /* Ensures the description is above the image */
-        text-align: center; /* Centers the text inside the block */
+        z-index: 2;
+        text-align: center;
     }
 
     

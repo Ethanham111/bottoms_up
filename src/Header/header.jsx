@@ -1,4 +1,3 @@
-// src/Header/header.jsx
 import React, { useState } from 'react';
 import logo from '../Images/blackBottomsLogo.png';
 import './header.css';
@@ -12,6 +11,14 @@ function Header() {
         setMenuOpen(!menuOpen);
     };
 
+    const handleMenuItemClick = () => {
+        setMenuOpen(false);
+    };
+
+    const handleMenuClose = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <header className="header">
             <nav className="navBar">
@@ -20,22 +27,25 @@ function Header() {
                     &#9776;
                 </button>
                 <div className={`navLinks ${menuOpen ? 'mobile-menu-open' : ''}`}>
-                    <a className="navElement" id="homeNav" href="#homeSection">
+                    <a className="navElement" id="homeNav" href="#homeSection" onClick={handleMenuItemClick}>
                         {language === 'EN' ? 'Home' : 'Accueil'}
                         <span className="red-bar"></span>
                     </a>
-                    <a className="navElement" id="servicesNav" href="#servicesSection">
+                    <a className="navElement" id="servicesNav" href="#servicesSection" onClick={handleMenuItemClick}>
                         {language === 'EN' ? 'Services' : 'Services'}
                         <span className="red-bar"></span>
                     </a>
-                    <a className="navElement" id="aboutNav" href="#aboutSection">
+                    <a className="navElement" id="aboutNav" href="#aboutSection" onClick={handleMenuItemClick}>
                         {language === 'EN' ? 'About' : 'À Propos'}
                         <span className="red-bar"></span>
                     </a>
-                    <a className="navElement" id="contactNav" href="#contactsSection">
+                    <a className="navElement" id="contactNav" href="#contactsSection" onClick={handleMenuItemClick}>
                         {language === 'EN' ? 'Contact' : 'Contact'}
                         <span className="red-bar"></span>
                     </a>
+                    <button className="close-button" onClick={handleMenuClose}>
+                        &times;
+                    </button>
                 </div>
                 <button className="language-button" onClick={toggleLanguage}>
                     {language === 'EN' ? 'FR' : 'EN'}
