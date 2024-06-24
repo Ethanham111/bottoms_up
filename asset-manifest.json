@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/bottoms_up/static/css/main.f0b9ef86.css",
+    "main.js": "/bottoms_up/static/js/main.020c045a.js",
+    "static/js/453.859a9ebb.chunk.js": "/bottoms_up/static/js/453.859a9ebb.chunk.js",
+    "static/media/founders.JPG": "/bottoms_up/static/media/founders.6d86f09e682cb4386059.JPG",
+    "static/media/casual.jpg": "/bottoms_up/static/media/casual.686a64c707dbb6f42341.jpg",
+    "static/media/formal.jpg": "/bottoms_up/static/media/formal.dfce3d7261fb03da642e.jpg",
+    "static/media/bannerRight.jpg": "/bottoms_up/static/media/bannerRight.10c6e47af8b6dbbac894.jpg",
+    "static/media/bannerLeft.jpg": "/bottoms_up/static/media/bannerLeft.313aa98c3dce71c0a87d.jpg",
+    "static/media/cartoonHighball.png": "/bottoms_up/static/media/cartoonHighball.5b5f89e820bbfad74f9e.png",
+    "static/media/shaking.jpg": "/bottoms_up/static/media/shaking.9ed4cb9cc01f33cc73c6.jpg",
+    "static/media/Monckeberg-Regular.ttf": "/bottoms_up/static/media/Monckeberg-Regular.cd6db0ddb504850cd057.ttf",
+    "static/media/Monckeberg-Light.ttf": "/bottoms_up/static/media/Monckeberg-Light.a8d250a25b5fd969f435.ttf",
+    "static/media/cartoonMartini.png": "/bottoms_up/static/media/cartoonMartini.b76a6ce84a1da5cc26d0.png",
+    "static/media/cartoonMarg.png": "/bottoms_up/static/media/cartoonMarg.d7e37643d74b30868383.png",
+    "static/media/Monckeberg-Regular.woff": "/bottoms_up/static/media/Monckeberg-Regular.ce40f68df1798f7cfc57.woff",
+    "static/media/Monckeberg-Light.woff": "/bottoms_up/static/media/Monckeberg-Light.fd5351a439f3abec9ea4.woff",
+    "static/media/Monckeberg-Regular.woff2": "/bottoms_up/static/media/Monckeberg-Regular.e57ccd7bb81f53344037.woff2",
+    "static/media/Monckeberg-Light.woff2": "/bottoms_up/static/media/Monckeberg-Light.712c78f68505be9cec67.woff2",
+    "static/media/instagram.png": "/bottoms_up/static/media/instagram.ce307cbd5c71c42fa503.png",
+    "static/media/blackBottomsLogo.png": "/bottoms_up/static/media/blackBottomsLogo.dba7ed76b54e8068c198.png",
+    "static/media/glass.png": "/bottoms_up/static/media/glass.fa689d3797f01b2e7a7a.png",
+    "index.html": "/bottoms_up/index.html",
+    "main.f0b9ef86.css.map": "/bottoms_up/static/css/main.f0b9ef86.css.map",
+    "main.020c045a.js.map": "/bottoms_up/static/js/main.020c045a.js.map",
+    "453.859a9ebb.chunk.js.map": "/bottoms_up/static/js/453.859a9ebb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0b9ef86.css",
+    "static/js/main.020c045a.js"
+  ]
+}
