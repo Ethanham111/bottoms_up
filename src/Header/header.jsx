@@ -15,10 +15,6 @@ function Header() {
         setMenuOpen(false);
     };
 
-    const handleMenuClose = () => {
-        setMenuOpen(false);
-    };
-
     return (
         <header className="header">
             <nav className="navBar">
@@ -43,7 +39,7 @@ function Header() {
                         {language === 'EN' ? 'Contact' : 'Contact'}
                         <span className="red-bar"></span>
                     </a>
-                    <button className="close-button" onClick={handleMenuClose}>
+                    <button className="close-button" onClick={handleMenuItemClick}>
                         &times;
                     </button>
                 </div>
