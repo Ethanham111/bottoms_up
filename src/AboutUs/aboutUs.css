@@ -69,6 +69,14 @@
 
 
 @media only screen and (max-width: 1200px) {
+
+    .foundersPic {
+        max-width: 60%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+
     .aboutUsHeader {
         font-size: 3em;
     }
@@ -76,17 +84,17 @@
     #aboutDescription {
         font-size: 1.5em;
     }
-}
-
-@media only screen and (max-width: 800px) {
-    .aboutUsHeader {
-        font-size: 2.5em;
-    }
 
     .aboutSection {
         flex-direction: column;
         text-align: center;
         padding-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutUsHeader {
+        font-size: 2.5em;
     }
 
     .foundersPic {
@@ -96,7 +104,7 @@
     }
 
     #aboutDescription {
-        max-width: 100%;
+        max-width: 80%;
         font-size: 1.2em;
     }
 }
