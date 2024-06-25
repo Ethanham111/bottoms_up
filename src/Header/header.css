@@ -4,7 +4,7 @@
     background-color: #0B090A;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 50px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
     box-sizing: border-box;
@@ -15,16 +15,17 @@
 .navBar {
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .navLinks {
     display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    
+    gap: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
 }
 
 .navElement {
@@ -83,7 +84,7 @@
     cursor: pointer;
 }
 
-.close-button{
+.close-button {
     display: none;
 }
 
@@ -129,24 +130,27 @@
 
     .dropdown-button {
         display: block;
-        order: 1;
-        margin-right: auto;
     }
 
     #mainNavImg {
         order: 2;
-        height: 55px;
+        height: 60px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
     }
 
     .language-button {
         order: 3;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
         padding: 5px 10px;
     }
 
     .close-button {
+        display: none;
+    }
+
+    .close-button.visible {
         display: block;
         position: absolute;
         top: 10px;

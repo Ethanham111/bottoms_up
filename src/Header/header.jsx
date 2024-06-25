@@ -19,9 +19,6 @@ function Header() {
         <header className="header">
             <nav className="navBar">
                 <img id="mainNavImg" src={logo} alt="Main Logo" />
-                <button className="dropdown-button" onClick={handleMenuToggle}>
-                    &#9776;
-                </button>
                 <div className={`navLinks ${menuOpen ? 'mobile-menu-open' : ''}`}>
                     <a className="navElement" id="homeNav" href="#homeSection" onClick={handleMenuItemClick}>
                         {language === 'EN' ? 'Home' : 'Accueil'}
@@ -39,10 +36,13 @@ function Header() {
                         {language === 'EN' ? 'Contact' : 'Contact'}
                         <span className="red-bar"></span>
                     </a>
-                    <button className="close-button" onClick={handleMenuItemClick}>
+                    <button className={`close-button ${menuOpen ? 'visible' : ''}`} onClick={handleMenuItemClick}>
                         &times;
                     </button>
                 </div>
+                <button className="dropdown-button" onClick={handleMenuToggle}>
+                    &#9776;
+                </button>
                 <button className="language-button" onClick={toggleLanguage}>
                     {language === 'EN' ? 'FR' : 'EN'}
                 </button>
