@@ -118,8 +118,9 @@
         background-color: rgba(0, 0, 0, 0.9);
         opacity: 0;
         transform: translateY(-100%);
-        padding-top: 100px;
+        padding-bottom : 150px;
         z-index: 999;
+        transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
     }
 
     .navLinks.mobile-menu-open {
@@ -130,6 +131,8 @@
 
     .dropdown-button {
         display: block;
+        order: 1;
+        margin-right: 10px;
     }
 
     #mainNavImg {
@@ -144,6 +147,7 @@
     .language-button {
         order: 3;
         padding: 5px 10px;
+        margin-left: 10px;
     }
 
     .close-button {
