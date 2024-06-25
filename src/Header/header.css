@@ -68,7 +68,6 @@
     transition: background-color 0.3s ease;
     margin-left: auto;
     justify-self: flex-end;
-    margin-right: 7%;
 }
 
 .language-button:hover {
@@ -136,7 +135,7 @@
 
     #mainNavImg {
         order: 2;
-        height: 65px;
+        height: 55px;
     }
 
     .language-button {
@@ -144,6 +143,7 @@
         margin-top: 0;
         margin-left: 0;
         margin-right: 0;
+        padding: 5px 10px;
     }
 
     .close-button {
