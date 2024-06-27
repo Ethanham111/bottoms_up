@@ -20,11 +20,13 @@
 /* Mobile */
 @media only screen and (max-width: 800px) {
     .glasses {
-        max-width: 100px; 
+        max-width: 100px;
+        margin: auto 
     }
     
     .martinis {
         max-width: 150px; 
+        margin: auto;
     }
 }
 

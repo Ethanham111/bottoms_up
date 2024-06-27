@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 20px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
     box-sizing: border-box;
     position: relative;
@@ -37,7 +37,7 @@
 
 .red-bar {
     position: absolute;
-    bottom: -1px;
+    bottom: -3px;
     height: 4px;
     background-color: red;
     width: 0;
