@@ -75,7 +75,7 @@
     background: none;
     border: none;
     color: white;
-    font-size: 45px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -124,16 +124,15 @@
         transform: translateY(0);
     }
 
-    .dropdown-button {
-        display: block;
-        order: 2;
-        margin-left: auto;
-    }
-
     #mainNavImg {
         order: 1;
         height: 60px;
         margin-right: auto;
+    }
+
+    .dropdown-button {
+        display: block;
+        order: 2;
     }
 
     .language-button {
