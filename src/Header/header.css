@@ -1,3 +1,4 @@
+/* header.css */
 .header {
     height: 100px;
     width: 100%;
@@ -22,10 +23,7 @@
 .navLinks {
     display: flex;
     gap: 50px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0 auto;
+    margin-left: auto;
 }
 
 .navElement {
@@ -39,7 +37,7 @@
 
 .red-bar {
     position: absolute;
-    bottom: -3px;
+    bottom: -1px;
     height: 4px;
     background-color: red;
     width: 0;
@@ -55,7 +53,6 @@
 #mainNavImg {
     height: 70px;
     margin-right: auto;
-    justify-self: flex-start;
 }
 
 .language-button {
@@ -64,11 +61,9 @@
     font-size: 16pt;
     font-family: 'Monckeberg';
     border: none;
-    padding: 10px 20px;
+    padding: 5px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: auto;
-    justify-self: flex-end;
 }
 
 .language-button:hover {
@@ -118,7 +113,7 @@
         background-color: rgba(0, 0, 0, 0.9);
         opacity: 0;
         transform: translateY(-100%);
-        padding-bottom : 150px;
+        padding-bottom: 150px;
         z-index: 999;
         transition: height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
     }
@@ -131,23 +126,25 @@
 
     .dropdown-button {
         display: block;
-        order: 1;
-        margin-right: auto;
+        order: 2;
+        margin-left: auto;
     }
 
     #mainNavImg {
-        order: 2;
+        order: 1;
         height: 60px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 0 auto;
+        margin-right: auto;
     }
 
     .language-button {
-        order: 3;
-        padding: 5px 10px;
-        margin-left: auto;
+        display: none;
+    }
+
+    .navLinks .language-button {
+        display: block;
+        width: 20%;
+        text-align: center;
+        padding: 10px 0;
     }
 
     .close-button {

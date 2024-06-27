@@ -31,34 +31,27 @@ function Testimonals() {
     }, []); // Empty dependency array ensures the effect runs only once
 
     return (
-        <div class="TestimonalsContainer">
-        <div class="Testimonals">
-            <p id="testHeader">Testimonals </p>
-            <div class="swiper-container swiper-no-swiping">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <p class="comments">"Best bar service. Recommended !!!!!"</p>
-                        <p class="testimonial-author">-Naomi</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <p class="comments">"BEST BAR SERVICE EVER!!!"</p>
-                        <p class="testimonial-author"> -Sabrina</p>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <p class="comments">"Terrific bar service 👏"</p>
-                        <p class="testimonial-author"> -Phillipe</p>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <p class="comments">"Used bottoms up bar service for my birthday party. They made amazing cocktails..."</p>
-                        <p class="testimonial-author"> -Alicia</p>
+        <div className="TestimonalsContainer">
+            <div className="Testimonals">
+                <p id="testHeader">Testimonals</p>
+                <div className="swiper-container swiper-no-swiping">
+                    <div className="swiper-wrapper">
+                        <div className="swiper-slide">
+                            <p className="comments">"Best bar service. Recommended !!!!!"<br/><span className="testimonial-author">-Naomi</span></p>
+                        </div>
+                        <div className="swiper-slide">
+                            <p className="comments">"BEST BAR SERVICE EVER!!!"<br/><span className="testimonial-author">-Sabrina</span></p>
+                        </div>
+                        <div className="swiper-slide">
+                            <p className="comments">"Terrific bar service 👏"<br/><span className="testimonial-author">-Phillipe</span></p>
+                        </div>
+                        <div className="swiper-slide">
+                            <p className="comments">"Used bottoms up bar service for my birthday party. They made amazing cocktails..."<br/><span className="testimonial-author">-Alicia</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     );
 }
 

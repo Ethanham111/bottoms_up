@@ -36,15 +36,15 @@ function Header() {
                         {language === 'EN' ? 'Contact' : 'Contact'}
                         <span className="red-bar"></span>
                     </a>
+                    <button className="language-button" onClick={toggleLanguage}>
+                        {language === 'EN' ? 'FR' : 'EN'}
+                    </button>
                     <button className={`close-button ${menuOpen ? 'visible' : ''}`} onClick={handleMenuItemClick}>
                         &times;
                     </button>
                 </div>
                 <button className="dropdown-button" onClick={handleMenuToggle}>
                     &#9776;
-                </button>
-                <button className="language-button" onClick={toggleLanguage}>
-                    {language === 'EN' ? 'FR' : 'EN'}
                 </button>
             </nav>
         </header>
