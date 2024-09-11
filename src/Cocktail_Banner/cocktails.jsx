@@ -1,8 +1,8 @@
 
-import glasses from "../Images/glass.png";
-import cartoonMartini from "../Images/cartoonMartini.png"
-import cartoonMarg from "../Images/cartoonMarg.png"
-import cartoonHighball from "../Images/cartoonHighball.png"
+import glasses from "../Images/glass.webp";
+import cartoonMartini from "../Images/cartoonMartini.webp"
+import cartoonMarg from "../Images/cartoonMarg.webp"
+import cartoonHighball from "../Images/cartoonHighball.webp"
 import './cocktails.css'
 
 function Cocktail_Banner() {

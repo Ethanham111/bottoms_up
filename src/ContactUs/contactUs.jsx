@@ -1,8 +1,8 @@
 // src/ContactUs/contactUs.jsx
 import React from 'react';
-import call from '../Images/call.png';
-import insta from '../Images/instagram.png';
-import email from '../Images/email.png';
+import call from '../Images/call.webp';
+import insta from '../Images/instagram.webp';
+import email from '../Images/email.webp';
 import './contactUs.css';
 import { useLanguage } from '../Language';
 

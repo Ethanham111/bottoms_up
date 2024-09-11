@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../Images/blackBottomsLogo.png';
+import logo from '../Images/blackBottomsLogo.webp';
 import './header.css';
 import { useLanguage } from '../Language';
 

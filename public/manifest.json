@@ -3,14 +3,14 @@
   "name": "Bottoms Up Bar Services",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "glass.webp",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/webp"
     },
     {
-      "src": "logo.png",
+      "src": "glass.webp",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/webp"
     }
   ],
   "start_url": ".",

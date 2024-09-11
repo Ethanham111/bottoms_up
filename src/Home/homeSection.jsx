@@ -1,7 +1,7 @@
 // src/Home/homeSection.jsx
 import React from 'react';
-import banner1 from '../Images/bannerLeft.jpg';
-import banner2 from '../Images/bannerRight.jpg';
+import banner1 from '../Images/bannerLeft.webp';
+import banner2 from '../Images/bannerRight.webp';
 import './homeSection.css';
 
 function HomeSection() {

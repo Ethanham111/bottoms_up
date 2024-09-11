@@ -1,7 +1,7 @@
 import React from 'react';
-import shaking from '../Images/shaking.jpg';
-import casual from '../Images/casual.jpg';
-import formal from '../Images/formal.jpg';
+import shaking from '../Images/shaking.webp';
+import casual from '../Images/casual.webp';
+import formal from '../Images/formal.webp';
 import './services.css';
 import { useLanguage } from '../Language';
 import useIntersectionObserver from '../observer';

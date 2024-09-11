@@ -18,10 +18,20 @@
     <meta property="og:url" content="https://www.bottomsupbar.ca/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Bottoms Up" />
+
+    <!-- Use glass.webp as favicon with a fallback to glass.png -->
+    <link rel="icon" href="%PUBLIC_URL%/glass.webp" type="image/webp" />
+    <link rel="icon" href="%PUBLIC_URL%/glass.png" type="image/png" sizes="32x32" />
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="canonical" href="https://www.bottomsupbar.ca/" />
+
+    <!-- Preload banner image for performance -->
+    <link rel="preload" href="/media/bannerLeft.313aa98....jpg" as="image" />
+
     <title>Bottoms Up | Premier Bar Services in Montreal</title>
+
     <!-- Add structured data -->
     <script type="application/ld+json">
       {

@@ -1,4 +1,4 @@
-import founders from '../Images/founders.JPG'
+import founders from '../Images/founders.webp'
 import './aboutUs.css'
 import { useLanguage } from '../Language';
 
