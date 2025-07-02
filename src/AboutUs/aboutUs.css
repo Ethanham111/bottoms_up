@@ -1,125 +1,114 @@
 @keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px); /* slightly less float */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .aboutUsHeader {
-    color: #DBDADA;
-    font-size: 4em;
-    text-align: center;
-    font-family: 'Monckeberg Light';
-    position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  color: #DBDADA;
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Monckeberg Light';
+  position: relative;
+  user-select: none;
 }
 
 .aboutUsHeader::after {
-    content: "";
-    display: block;
-    width: 200px; 
-    height: 3px; 
-    background-color: #E5383B;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+  content: "";
+  display: block;
+  width: 160px;
+  height: 3px;
+  background-color: #E5383B;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
 }
 
 .aboutSection {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: left;
-    padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left;
+  padding: 60px 20px;
 }
 
 .foundersPic {
-    max-width: 30%;
-    height: auto;
-    border: solid #DBDADA;
-    border-radius: 10px;
+  max-width: 22%;
+  height: auto;
+  border: solid #DBDADA;
+  border-radius: 10px;
 }
 
 #aboutDescription {
-    font-size: 1.8em;
-    color: white;
-    max-width: 800px;
-    font-family: 'Monckeberg Light';
-    text-align: center;
-    padding: 15px;
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    animation: float 3s ease-in-out infinite;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  font-size: 1.2em;
+  color: white;
+  max-width: 700px;
+  font-family: 'Monckeberg Light';
+  text-align: center;
+  padding: 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  animation: float 3s ease-in-out infinite;
+  user-select: none;
 }
 
-
-
+/* --- Responsive --- */
 @media only screen and (max-width: 1200px) {
+  .aboutUsHeader {
+    font-size: 2.4em;
+  }
 
-    .foundersPic {
-        max-width: 60%;
-        padding-right: 0;
-        margin-bottom: 20px;
-    }
+  .aboutSection {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
 
+  .foundersPic {
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
 
-    .aboutUsHeader {
-        font-size: 3em;
-    }
-
-    #aboutDescription {
-        font-size: 1.5em;
-    }
-
-    .aboutSection {
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 50px;
-    }
+  #aboutDescription {
+    font-size: 1.1em;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .aboutUsHeader {
-        font-size: 2.5em;
-    }
+  .aboutUsHeader {
+    font-size: 2em;
+  }
 
-    .foundersPic {
-        max-width: 60%;
-        padding-right: 0;
-        margin-bottom: 20px;
-    }
+  .foundersPic {
+    max-width: 70%;
+  }
 
-    #aboutDescription {
-        max-width: 80%;
-        font-size: 1.2em;
-    }
+  #aboutDescription {
+    max-width: 90%;
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .aboutUsHeader {
-        font-size: 2em;
-    }
+  .aboutUsHeader {
+    font-size: 1.8em;
+  }
 
-    #aboutDescription {
-        font-size: 1em;
-        max-width: 400px;
-    }
+  #aboutDescription {
+    font-size: 0.95em;
+    max-width: 95%;
+  }
 
-    .foundersPic {
-        max-width: 80%;
-    }
+  .foundersPic {
+    max-width: 85%;
+  }
 }

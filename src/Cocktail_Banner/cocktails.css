@@ -1,51 +1,75 @@
-#glassesContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#glassesWrapper {
     overflow: hidden;
+    width: 100vw;
+    padding: 20px 0;
+    background-color: transparent;
+    position: relative;
 }
 
-.glasses, .martinis {
-    margin: 10px 20px;
+#glassesCarousel {
+    display: flex;
+    width: fit-content;
+    animation: scroll 35s linear infinite;
 }
 
-.glasses {
-    max-width: 120px;
+.cocktailImg {
+    max-height: 150px;
+    margin: 0 20px;
+    flex-shrink: 0;
 }
 
-.martinis {
-    max-width: 170px;
+.glassesImg {
+    max-height: 110px;
+    margin: 0 35px;
+    flex-shrink: 0;
+    margin-top: 30px;
 }
 
-/* Mobile */
-@media only screen and (max-width: 800px) {
-    .glasses {
-        max-width: 100px;
-        margin: auto 
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
     }
-    
-    .martinis {
-        max-width: 150px; 
-        margin: auto;
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive scaling */
+@media only screen and (max-width: 800px) {
+    .cocktailImg {
+        max-height: 120px;
+        margin: 0 15px;
+    }
+    .glassesImg {
+        max-height: 80px;
+        margin: 0 15px;
+        margin-top: 20px;
+        
     }
 }
 
 @media only screen and (max-width: 600px) {
-    .glasses {
-        max-width: 80px; 
+    .cocktailImg {
+        max-height: 100px;
+        margin: 0 10px;
     }
-    
-    .martinis {
-        max-width: 130px; 
+    .glassesImg {
+        max-height: 65px;
+        margin: 0 10px;
+        margin-top: 25px;
+        
     }
 }
 
 @media only screen and (max-width: 400px) {
-    .glasses {
-        max-width: 60px; 
+    .cocktailImg {
+        max-height: 80px;
+        margin: 0 8px;
     }
-    
-    .martinis {
-        max-width: 110px; 
+    .glassesImg {
+        max-height: 50px;
+        margin: 0 8px;
+        margin-top: 30px;
+        
     }
 }

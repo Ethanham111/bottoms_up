@@ -1,217 +1,127 @@
-.servicesText {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+/* Global helpers */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#serviceHeader {
-    color: #DBDADA;
-    text-align: center;
-    align-content: center;
-    font-size: 4em;
-    font-family: 'Monckeberg Light';
-    padding-top: 20px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+/* === Section Background === */
+.servicesSection {
+  background-color: #261a1a;
+  color: #e5e7eb; /* Tailored light gray for better contrast on dark bg */
+  padding: 80px 20px;
 }
 
-#serviceHeader::after {
-    content: "";
-    display: block;
-    width: 200px; 
-    height: 3px; 
-    background-color: #E5383B;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+/* === Wrapper Layout === */
+.servicesWrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
 }
 
-#servicesItalics {
-    color: white;
-    font-size: 3em;
-    font-family: 'Monckeberg Light';
-    font-style: italic;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+/* === Text Column === */
+.servicesTextColumn {
+  font-family: 'Monckeberg Light', sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.9;
 }
 
-#servicesParagraph {
-    color: white;
-    font-size: 1.8em;
-    font-family: 'Monckeberg Light';
-    max-width: 70%;
-    margin: 0 auto;
-    padding-bottom: 50px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.serviceHeading {
+  color: #ffffff;
+  font-size: 3.4rem;
+  font-weight: 800;
+  margin-bottom: 28px;
+  text-align: left;
 }
 
-.servicesContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; 
-    align-items: center;
-    flex-wrap: wrap;
+.serviceSubheading {
+  font-style: italic;
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  color: #d1d5db;
 }
 
-.serviceImg {
-    max-width: 100%;
-    height: 550px;
-    opacity: 1;
-    transition: .5s ease;
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-    border-width: 10;
-    margin-top: 20px;
-    position: relative;
+.serviceParagraph {
+  font-size: 1.3rem;
+  color: #e5e7eb;
 }
 
-#shaking {
-    height: 550px;
-    max-width: 50%;
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-    border-width: 10;
-    margin-top: 20px;
+/* === Image Column === */
+.servicesImageColumn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
 }
 
-.servicesDivs {
-    position: relative;
-    overflow: hidden;
+.serviceImgBox {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
 }
 
-.servicesDivs .overlay-box {    
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin-top: 70%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.servicesDivs:hover .serviceImg {
-    opacity: 0.5;
-}
-
-.servicesDivs:hover .overlay-box {
-    opacity: 1;
-}
-
-.serviceDescriptionMobile {
-    display: none;
-}
-
-.serviceDescription {
-    color: white;
-    font-size: 32pt;
-    font-family: 'Monckeberg';
-    padding-left: 10px;
-    padding-bottom: 150px;
-    text-align: center;
-}
-
+/* === Scroll Animation === */
 .hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .animate {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-@media only screen and (max-width: 1200px) {
-    #serviceHeader {
-        font-size: 3em;
-    }
+/* === Responsive === */
+@media screen and (max-width: 992px) {
+  .servicesWrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 
-    #servicesItalics {
-        font-size: 2.5em;
-    }
+  .servicesTextColumn {
+    text-align: center;
+  }
 
-    #shaking {
-        display: none;
-    }
+  .serviceHeading {
+    text-align: center;
+    font-size: 3rem;
+  }
 
-    #servicesParagraph {
-        font-size: 1.5em;
-    }
+  .serviceSubheading,
+  .serviceParagraph {
+    text-align: center;
+  }
 
-    .serviceDescription {
-        font-size: 28pt;
-    }
+  .servicesImageColumn {
+    grid-template-columns: 1fr;
+  }
+
+  .serviceImgBox {
+    aspect-ratio: 3 / 2;
+  }
 }
 
-@media only screen and (max-width: 800px) {
-    #serviceHeader {
-        font-size: 2.5em;
-    }
+@media screen and (max-width: 600px) {
+  .serviceHeading {
+    font-size: 2.4rem;
+  }
 
-    #servicesItalics {
-        font-size: 2em;
-    }
-    
-    #servicesParagraph {
-        font-size: 1.2em;
-    }
+  .serviceSubheading {
+    font-size: 1.3rem;
+  }
 
-    .serviceDescription {
-        font-size: 24pt;
-    }
+  .serviceParagraph {
+    font-size: 1.1rem;
+  }
 
-    .serviceImg {
-        max-height: 300px;
-    }
-
-    .servicesDivs:hover .serviceImg {
-        opacity: 1;
-    }
-
-    .servicesDivs:hover .overlay-box {
-        opacity: 0;
-    }
-
-    .serviceDescription {
-        display: none;
-    }
-
-    .serviceDescriptionMobile {
-        display: block; 
-        color: white;
-        font-size: 2.6vh; 
-        font-family: 'Monckeberg';
-        overflow: hidden;
-        z-index: 2;
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    #serviceHeader {
-        font-size: 2em;
-    }
-
-    #servicesItalics {
-        font-size: 1.8em;
-    }
-
-    #servicesParagraph {
-        font-size: 1em;
-    }
-
-    .serviceDescription {
-        font-size: 20pt;
-    }
+  .serviceImgBox {
+    aspect-ratio: auto;
+    max-height: 320px;
+  }
 }

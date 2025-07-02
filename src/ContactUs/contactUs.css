@@ -3,11 +3,9 @@
     text-align: center;
     font-size: 4em;
     font-family: 'Monckeberg Light';
-    position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
+    position: relative;
+    margin-bottom: 30px;
 }
 
 #contactHeader::after {
@@ -16,104 +14,103 @@
     width: 200px;
     height: 3px;
     background-color: #E5383B;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
 }
 
 .contactsSection {
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-size: 18pt;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-bottom: 100px;
     font-family: 'Monckeberg Light';
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
+    text-align: center;
+    color: white;
 }
 
-.emailDiv,
-.callDiv,
-.socialDiv {
-    background-color: #E5383B;
+.contactCard {
+    background-color: #8B1C1C;
+    width: 220px;
+    height: 240px;
+    border: 5px solid black;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    margin: 0 20px;
-    transition: background-color 0.3s ease; /* Added transition for background color */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
 }
 
-.emailDiv:hover,
-.callDiv:hover,
-.socialDiv:hover {
-    background-color: rgb(212, 14, 14); /* Change background color on hover */
+.contactCard:hover {
+    background-color: #A22222;
     cursor: pointer;
 }
 
-#instaPhoto {
-    width: 165px;
-    height: auto;
-    padding-left: 15px;
+.contactCard img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contactLabel {
+    font-size: 1.2em;
+    margin: 5px 0;
 }
 
 .phoneNumber,
 .email {
     color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+    max-width: 100%;
+    word-break: break-word;
+    line-height: 1.3em;
+    padding: 0 5px;
+    display: block;
 }
 
+/* MOBILE STYLES */
 @media only screen and (max-width: 800px) {
-
     #contactHeader {
         font-size: 2.5em;
     }
 
     .contactsSection {
-        flex-direction: row;
-        align-items: center;
+        gap: 20px;
     }
 
-    .emailDiv,
-    .callDiv,
-    .socialDiv {
+    .contactCard {
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        overflow: hidden;
-        margin: 20px 0;
         padding: 0;
-        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .callDiv img,
-    .emailDiv img,
-    .socialDiv img {
-        width: 60%;
-        height: auto;
-        margin-top: 25%;
+    .contactCard img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        margin-top: 10px;
     }
 
-    #instaPhoto {
-        max-width: 50%;
-        padding-left: 5px;
+        .contactCardLink {
+        text-decoration: none;
+        color: inherit;
+        display: block;
     }
 
-    .callUs,
-    .emailUs,
+    .contactLabel,
     .phoneNumber,
     .email {
         display: none;
-    }
-
-    .callDiv:hover,
-    .socialDiv:hover,
-    .emailDiv:hover {
-        width: 100px;
-        height: 100px;
-        background-color: rgb(212, 14, 14); /* Change background color on hover */
     }
 }

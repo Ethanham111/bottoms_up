@@ -2,7 +2,7 @@
 .header {
     height: 100px;
     width: 100%;
-    background-color: #0B090A;
+    background-color: #7C7575;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -56,7 +56,7 @@
 }
 
 .language-button {
-    background-color: #E5383B;
+    background-color: #6e110a;
     color: white;
     font-size: 16pt;
     font-family: 'Monckeberg';
