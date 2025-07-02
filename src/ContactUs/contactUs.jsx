@@ -19,12 +19,12 @@ const contactData = [
     },
     {
         id: 'email',
-        href: 'mailto:equipebottomsup@gmail.com',
+        href: 'mailto:equipe.bottomsup@gmail.com',
         img: emailIcon,
         alt: 'Email icon',
         labelEN: 'Email',
         labelFR: 'Email',
-        display: 'equipebottomsup@gmail.com',
+        display: 'equipe.bottomsup@gmail.com',
         className: 'email',
     },
     {
